@@ -88,19 +88,19 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
         }
 
         /*
-         * ROS（右手系）の変換
+         * ROS (right-handed coordinate system) transformation:
          *  ROS.x =  Unity.z
          *  ROS.y = -Unity.x
          *  ROS.z =  Unity.y
          * 
-         * 加速度については、Zumoの寸法のスケール分だけ考慮が必要であるため、
-         * 対象オブジェクトの速度（my_body.velocity）は、スケール（ZumoModelController.scale）で割る必要がある
+         * For acceleration data, it's necessary to consider the scale of the Zumo's dimensions,
+         * so the velocity of the target object (my_body.velocity) needs to be divided by the scale (ZumoModelController.scale).
          */
         private void UpdateLinearAcceleration(Pdu pdu)
         {
-            // 対象物の方向(ワールド座標ではなく相対座標)の速度を取得する
+            // Obtain the velocity of the target object in its local coordinate system (relative coordinates), not in world coordinates.
             Vector3 current_velocity = this.sensor.transform.InverseTransformDirection(my_body.velocity);
-            // スケール変換
+            // scale conversion
             current_velocity = current_velocity / ZumoModelController.scale;
             Vector3 acceleration = (current_velocity - prev_velocity) / deltaTime;
             this.prev_velocity = current_velocity;
