@@ -87,9 +87,21 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
             UpdateLinearAcceleration(pdu.Ref("acc"));
         }
 
+        /*
+         * ROS（右手系）の変換
+         *  ROS.x =  Unity.z
+         *  ROS.y = -Unity.x
+         *  ROS.z =  Unity.y
+         * 
+         * 加速度については、Zumoの寸法のスケール分だけ考慮が必要であるため、
+         * 対象オブジェクトの速度（my_body.velocity）は、スケール（ZumoModelController.scale）で割る必要がある
+         */
         private void UpdateLinearAcceleration(Pdu pdu)
         {
+            // 対象物の方向(ワールド座標ではなく相対座標)の速度を取得する
             Vector3 current_velocity = this.sensor.transform.InverseTransformDirection(my_body.velocity);
+            // スケール変換
+            current_velocity = current_velocity / ZumoModelController.scale;
             Vector3 acceleration = (current_velocity - prev_velocity) / deltaTime;
             this.prev_velocity = current_velocity;
             this.delta_angle = this.GetCurrentEulerAngle() - prev_angle;
@@ -103,9 +115,9 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
         }
         private void UpdateOrientation(Pdu pdu)
         {
-            pdu.SetData("x", (double)this.sensor.transform.rotation.z);
-            pdu.SetData("y", (double)-this.sensor.transform.rotation.x);
-            pdu.SetData("z", (double)this.sensor.transform.rotation.y);
+            pdu.SetData("x", (double)this.sensor.transform.rotation.eulerAngles.z);
+            pdu.SetData("y", (double)-this.sensor.transform.rotation.eulerAngles.x);
+            pdu.SetData("z", (double)this.sensor.transform.rotation.eulerAngles.y);
         }
         private void UpdateAngularVelocity(Pdu pdu)
         {

@@ -8,6 +8,11 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
 
     public class ZumoModelController : MonoBehaviour, IRobotPartsController, IRobotPartsConfig
     {
+        /*
+         * Unityの世界では、１ユニット＝１ｍ
+         * Zumo のサイズは全長約 100mm であり、このサイズを１ユニットとする。
+         * そのため、Zumoのモデルを１０倍した寸法値をUnityの世界で再現するものとする。
+         */
         public static readonly float scale = 10f;
 
         public void Initialize(object root)
