@@ -8,6 +8,8 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
 
     public class ZumoModelController : MonoBehaviour, IRobotPartsController, IRobotPartsConfig
     {
+        public static readonly float scale = 10f;
+
         public void Initialize(object root)
         {
             /* nothing to do */
@@ -37,7 +39,7 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
 
         public IoMethod io_method = IoMethod.RPC;
         public CommMethod comm_method = CommMethod.UDP;
-        public int pdu_size_sensor = 464;
+        public int pdu_size_sensor = 104;
         public int pdu_size_actuator = 24;
         public RoboPartsConfigData[] GetRoboPartsConfig()
         {
