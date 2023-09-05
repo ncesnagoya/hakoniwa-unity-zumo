@@ -1,0 +1,12 @@
+{
+  "fields": [
+    {
+      "name": "motors",
+      "type": "ZumoPduMotor[2]"
+    },
+    {
+      "name": "led",
+      "type": "ZumoPduLed"
+    }
+  ]
+}

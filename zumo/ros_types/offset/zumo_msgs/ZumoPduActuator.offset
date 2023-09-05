@@ -1,0 +1,2 @@
+array:struct:motors:ZumoPduMotor:0:8:2
+single:struct:led:ZumoPduLed:8:16

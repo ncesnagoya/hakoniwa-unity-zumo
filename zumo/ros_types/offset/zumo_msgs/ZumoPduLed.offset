@@ -1,0 +1,4 @@
+single:primitive:red:bool:0:4
+single:primitive:blue:bool:4:4
+single:primitive:green:bool:8:4
+single:primitive:yellow:bool:12:4

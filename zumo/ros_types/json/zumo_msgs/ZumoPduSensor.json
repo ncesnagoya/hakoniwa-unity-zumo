@@ -1,0 +1,16 @@
+{
+  "fields": [
+    {
+      "name": "irs",
+      "type": "ZumoPduIrSensor[2]"
+    },
+    {
+      "name": "line_sensors",
+      "type": "ZumoPduLineSensor[6]"
+    },
+    {
+      "name": "imu",
+      "type": "ZumoPduImu"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "red",
+      "type": "bool"
+    },
+    {
+      "name": "blue",
+      "type": "bool"
+    },
+    {
+      "name": "green",
+      "type": "bool"
+    },
+    {
+      "name": "yellow",
+      "type": "bool"
+    }
+  ]
+}
