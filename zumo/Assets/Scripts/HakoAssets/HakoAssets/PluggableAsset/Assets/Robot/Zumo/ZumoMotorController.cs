@@ -17,6 +17,7 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
 
     public class ZumoMotorController : MonoBehaviour, IRobotPartsController
     {
+        public float scale = 0.1f;
         private GameObject root;
         private string root_name;
         private PduIoConnector pdu_io;
@@ -80,11 +81,11 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
             var right_power = this.pdu_reader.GetReadOps().Refs("motors")[(int)ZumoMotorType.MotorType_Right].GetDataInt32("power");
 
 
-            this.front_motors[(int)ZumoMotorType.MotorType_Left].SetTargetVelicty((float)left_power);
-            this.front_motors[(int)ZumoMotorType.MotorType_Right].SetTargetVelicty((float)right_power);
+            this.front_motors[(int)ZumoMotorType.MotorType_Left].SetTargetVelicty(this.scale * (float)left_power);
+            this.front_motors[(int)ZumoMotorType.MotorType_Right].SetTargetVelicty(this.scale * (float)right_power);
 
-            this.back_motors[(int)ZumoMotorType.MotorType_Left].SetTargetVelicty((float)left_power);
-            this.back_motors[(int)ZumoMotorType.MotorType_Right].SetTargetVelicty((float)right_power);
+            this.back_motors[(int)ZumoMotorType.MotorType_Left].SetTargetVelicty(this.scale * (float)left_power);
+            this.back_motors[(int)ZumoMotorType.MotorType_Right].SetTargetVelicty(this.scale * (float)right_power);
         }
 
         public RosTopicMessageConfig[] getRosConfig()
