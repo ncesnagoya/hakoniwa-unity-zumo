@@ -497,7 +497,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457471397}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -3.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -545,7 +545,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812224274}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: de64fce2eb3c6774a81a08aa0fb5b4c1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -641,7 +641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883308741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2.903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -664,6 +664,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1749489912}
     m_Modifications:
+    - target: {fileID: 733804268524624287, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorPosition.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 733804268524624287, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorPosition.y
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 733804268524624287, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorPosition.z
+      value: -0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 733804268524624287, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 733804268524624287, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorRotation.z
+      value: 1.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286643826783240058, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorPosition.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286643826783240058, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorPosition.y
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286643826783240058, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorPosition.z
+      value: -0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286643826783240058, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286643826783240058, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorRotation.z
+      value: 1.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568467343778156858, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorPosition.z
+      value: 0.39
+      objectReference: {fileID: 0}
     - target: {fileID: 6441218657013460108, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -674,7 +718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6441218657013460108, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6441218657013460108, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
       propertyPath: m_LocalPosition.z
@@ -711,6 +755,10 @@ PrefabInstance:
     - target: {fileID: 6441218657013460111, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
       propertyPath: m_Name
       value: ZumoRoboModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059368628940093567, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
+      propertyPath: m_ParentAnchorPosition.z
+      value: 0.39
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b6adfe6785070b46b69cc0252da2512, type: 3}
@@ -1402,7 +1450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822651675}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 1.49, y: 6.55, z: -2.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
