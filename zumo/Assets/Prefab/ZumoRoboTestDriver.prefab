@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 2750588397916139666}
   - component: {fileID: 2750588397916139667}
   - component: {fileID: 5249323734910288027}
+  - component: {fileID: 4798773892882099208}
   m_Layer: 0
   m_Name: Motor
   m_TagString: Untagged
@@ -438,6 +439,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07637eb33ad66b744a6fb55cf1aacce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roboname: ZumoRoboModel
+--- !u!114 &4798773892882099208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750588397916139678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ba5ab527b42ec4197200f070eafd3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   roboname: ZumoRoboModel
