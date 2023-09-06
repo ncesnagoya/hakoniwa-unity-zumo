@@ -4919,7 +4919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   io_method: 1
   comm_method: 0
-  pdu_size_sensor: 464
+  pdu_size_sensor: 104
   pdu_size_actuator: 24
 --- !u!1 &6441218657288342590
 GameObject:

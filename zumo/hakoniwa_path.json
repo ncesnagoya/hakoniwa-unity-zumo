@@ -1,5 +1,5 @@
 {
-    "hakoniwa_base": "../..",
+    "hakoniwa_base": "../../../hakoniwa-zumosim/workspace/runtime",
     "settings": "./",
     "pdu_path": "./ros_types/json/",
     "offset_path": "./ros_types/offset"

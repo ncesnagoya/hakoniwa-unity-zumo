@@ -72,7 +72,7 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
             configs[1].value.type = topic[1].topic_type_name;
             configs[1].value.class_name = ConstantValues.pdu_reader_class;
             configs[1].value.conv_class_name = ConstantValues.conv_pdu_reader_class;
-            configs[1].value.pdu_size = this.pdu_size_sensor;
+            configs[1].value.pdu_size = this.pdu_size_actuator;
             configs[1].value.method_type = this.comm_method.ToString();
 
             return configs;
