@@ -91,14 +91,16 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
 
         void Update()
         {
-            string mag = "mag:";
-            string gyro = "gyro:";
-            string acc = "acc:";
-            this.testMeshPro.text = mag + this.mag.ToString();
+            string formattedString = string.Format("mag ( {0:+ 000.00;- 000.00;+ 000.00}, {1:+ 000.00;- 000.00;+ 000.00}, {2:+ 000.00;- 000.00;+ 000.00} )", this.mag.x, this.mag.y, this.mag.z);
+            this.testMeshPro.text = formattedString;
             this.testMeshPro.text += "\n";
-            this.testMeshPro.text += gyro + this.gyro.ToString();
+
+            formattedString = string.Format("gyro ( {0:+ 000.00;- 000.00;+ 000.00}, {1:+ 000.00;- 000.00;+ 000.00}, {2:+ 000.00;- 000.00;+ 000.00} )", this.gyro.x, this.gyro.y, this.gyro.z);
+            this.testMeshPro.text += formattedString;
             this.testMeshPro.text += "\n";
-            this.testMeshPro.text += acc + this.acc.ToString();
+
+            formattedString = string.Format("acc ( {0:+ 000.00;- 000.00;+ 000.00}, {1:+ 000.00;- 000.00;+ 000.00}, {2:+ 000.00;- 000.00;+ 000.00} )", this.acc.x, this.acc.y, this.acc.z);
+            this.testMeshPro.text += formattedString;
 
         }
     }
