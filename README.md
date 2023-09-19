@@ -72,14 +72,14 @@ Unityは左手系ですが、PDU通信データは右手系で計算した値を
       * brightness: 0-1000 の値（0: 黒、1000: 白)
   * imu: ジャイロセンサー/加速度センサー/磁気センサー
     * [ZumoPduImu](https://github.com/ncesnagoya/hakoniwa-zumosim/blob/main/workspace/src/zumo/pdu/zumo_msgs/msg/ZumoPduImu.msg)
-　    * acc: 加速度センサー
+      * acc: 加速度センサー
       * gyro: ジャイロセンサ―
       * mag: 磁気センサー
       * 補足：
         * 角度はオイラー角（度）
         * 加速度の距離は実際の寸法に合わせています（単位：m)
-      * 補足：
-        * irs は定義のみで、未使用
+  * 補足：
+    * irs は定義のみで、未使用
 
 #### アクチュエータ
 
@@ -89,7 +89,7 @@ Unityは左手系ですが、PDU通信データは右手系で計算した値を
       * power: モーター回転指示値（値が大きいほど高い回転数が得られる。プラス値は正回転、マイナス値は逆回転）
   * led: LED
     * [ZumoPduLed ](https://github.com/ncesnagoya/hakoniwa-zumosim/blob/main/workspace/src/zumo/pdu/zumo_msgs/msg/ZumoPduLed.msg)
-　    * green: 車体先頭の２個のLEDのON/OFF指示。
+      * green: 車体先頭の２個のLEDのON/OFF指示。
         * ON: true
         * OFF: false
       * 補足：
