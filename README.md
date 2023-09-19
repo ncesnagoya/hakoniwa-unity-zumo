@@ -71,9 +71,10 @@ Unityエディタ起動後、プロジェクトビューの　`Scenes/Zumo/Work`
 
 ![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/b454bb9e-013a-44ec-a863-3b5eff34f769)
 
-以下のダイアログが出ますので、`TMP Importer` の`Import TMP Essentials` をクリックしてください。
+なお、以下のダイアログが出ますので、`TMP Importer` の`Import TMP Essentials` をクリックして、クローズしましょう。
 
-![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/dda63a23-18c2-4f2e-aa00-968773c03a1d)
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/b81f796c-41a4-4f80-adac-bd353c354f8c)
+
 
 このまま、`Window/Hakoniwa/GenerateDebug` をクリックしましょう。
 
