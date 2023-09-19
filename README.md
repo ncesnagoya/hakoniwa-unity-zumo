@@ -61,9 +61,9 @@ PackageManager左上の+ボタンから、「Add package from git URL...」で `
 
 ## Unity単独で開発する場合
 
-Unityエディタ起動後、プロジェクトビューの　`Scenes/TraninModel/Work` をダブルクリックしてください。
+Unityエディタ起動後、プロジェクトビューの　`Scenes/Zumo/Work` をダブルクリックしてください。
 
-![image](https://github.com/toppers/hakoniwa-unity-ev3model/assets/164193/af772f9c-a79f-4712-8ad5-bbc24a874d24)
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/addb33af-b3e7-43b1-8b1a-7285299f6ed5)
 
 
 このまま、`Window/Hakoniwa/GenerateDebug` をクリックしましょう。
@@ -73,4 +73,11 @@ Unityエディタ起動後、プロジェクトビューの　`Scenes/TraninMode
 
 ## hakoniwa-zumosim と連携して開発する場合
 
-TODO
+Unityエディタ起動後、プロジェクトビューの　`Scenes/Zumo/Hakoniwa` をダブルクリックしてください。
+
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/98550577-e69c-414e-966d-69abdfb1c10f)
+
+
+このまま、`Window/Hakoniwa/Generate` をクリックしましょう。
+
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/08c1a452-f8be-4c3b-b062-09577e368e3d)
