@@ -82,6 +82,8 @@ Unityエディタ起動後、プロジェクトビューの　`Scenes/Zumo/Work`
 
 コンフィグファイルの出力先は、`Assets/Resources`配下です。
 
+補足：Resources配下のファイルは、起動時にUnityエディタがキャッシュしているため、Generateした場合は、再起動してください。
+
 シミュレーション開始ボタンを押下し、以下の画面が出力され、コンソールにエラーメッセージが出力されていなければ成功です。
 
 ![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/995687a6-b9bc-4723-bde2-819ceb107181)
@@ -97,3 +99,17 @@ Unityエディタ起動後、プロジェクトビューの　`Scenes/Zumo/Hakon
 このまま、`Window/Hakoniwa/Generate` をクリックしましょう。
 
 ![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/08c1a452-f8be-4c3b-b062-09577e368e3d)
+
+コンフィグファイルの出力先は、`Assets/Resources`配下です。
+
+補足：Resources配下のファイルは、起動時にUnityエディタがキャッシュしているため、Generateした場合は、再起動してください。
+
+シミュレーションを開始する場合は、`hakoniwa-zumosim`配下で、以下のコマンドを実行してください。
+
+```
+bash docker/run.bash
+```
+
+その後、シミュレーション開始ボタンを押下し、コンソールにエラーメッセージが出力されていなければ成功です。
+
+シミュレーションを停止する場合は、Unityのシミュレーションを停止後に、`hakoniwa-zumosim`の端末を `CTRL+C` してください。
