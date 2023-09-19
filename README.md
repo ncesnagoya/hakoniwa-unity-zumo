@@ -80,6 +80,12 @@ Unityエディタ起動後、プロジェクトビューの　`Scenes/Zumo/Work`
 
 ![image](https://github.com/toppers/hakoniwa-openel-cpp/assets/164193/8be12b93-48d8-4fee-bac0-4e02ca0e6a9d)
 
+コンフィグファイルの出力先は、`Assets/Resources`配下です。
+
+シミュレーション開始ボタンを押下し、以下の画面が出力され、コンソールにエラーメッセージが出力されていなければ成功です。
+
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/995687a6-b9bc-4723-bde2-819ceb107181)
+
 
 ## hakoniwa-zumosim と連携して開発する場合
 
