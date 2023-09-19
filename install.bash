@@ -3,7 +3,7 @@
 
 if [ -d plugin/plugin-srcs ]
 then
-    if [ ! -d plugin/plugin-srcs/Assets/Model/Zumo -a ! -f zumo/Assets/Model/Zumo ]
+    if [ ! -d plugin/plugin-srcs/Assets/Model/Zumo -a ! -d zumo/Assets/Model/Zumo ]
     then
         echo "ERROR can not found Zumo.zip"
         echo "please download here: https://github.com/ncesnagoya/hakoniwa-unity-zumo/releases/tag/v1.1.0"
