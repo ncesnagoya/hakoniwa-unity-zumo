@@ -52,16 +52,16 @@ cd hakoniwa-unity-zumo/
 
 ![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/20658510-6990-4630-80c7-42620f6dfb55)
 
-また、以下のダイアログが出ますが、`Ignore` してください。
+もし、以下のダイアログが出た場合は、`Ignore` してください。
 
 ![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/1ac1a546-adb3-4a97-936a-9c9f11959dd7)
 
 成功するとこうなります。
 
-![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/757d54c2-45b0-4f19-9e06-3c82e5514795)
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/43b9162f-7c5f-4011-9805-568d567dea69)
 
 
-次に、`Newtonsoft.Json` が不足しているために発生しているエラーを解消します。
+次に、`Newtonsoft.Json` が不足している場合は、以下で対応してください。
 
 PackageManager左上の+ボタンから、「Add package from git URL...」で `com.unity.nuget.newtonsoft-json` を追加します。
 
@@ -69,8 +69,11 @@ PackageManager左上の+ボタンから、「Add package from git URL...」で `
 
 Unityエディタ起動後、プロジェクトビューの　`Scenes/Zumo/Work` をダブルクリックしてください。
 
-![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/addb33af-b3e7-43b1-8b1a-7285299f6ed5)
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/b454bb9e-013a-44ec-a863-3b5eff34f769)
 
+以下のダイアログが出ますので、`TMP Importer` の`Import TMP Essentials` をクリックしてください。
+
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/dda63a23-18c2-4f2e-aa00-968773c03a1d)
 
 このまま、`Window/Hakoniwa/GenerateDebug` をクリックしましょう。
 
