@@ -16,11 +16,11 @@
 ２つのリポジトリをクローンします。
 
 ```
-git clone --recursive https://github.com/ncesnagoya/hakoniwa-zumosim.git
+git clone --recursive git@github.com:ncesnagoya/hakoniwa-zumosim.git
 ```
 
 ```
-git clone --recursive https://github.com/ncesnagoya/hakoniwa-unity-zumo.git
+git clone --recursive git@github.com:ncesnagoya/hakoniwa-unity-zumo.git
 ```
 
 ## インストール手順
