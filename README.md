@@ -42,6 +42,11 @@ cd hakoniwa-unity-zumo/
 
 対象フォルダ：`hakoniwa-unity-zumo\plugin\plugin-srcs`
 
+途中、バージョンが異なる旨のメッセージが出ますが、`Continue` してください。
+
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/20658510-6990-4630-80c7-42620f6dfb55)
+
+
 成功するとこうなります。
 
 TODO
