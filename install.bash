@@ -24,3 +24,4 @@ bash install.bash
 cd ..
 
 cp -rp zumo/Assets/* plugin/plugin-srcs/Assets/
+cp -rp zumo/Assets/Resources/ros_types plugin/plugin-srcs/
