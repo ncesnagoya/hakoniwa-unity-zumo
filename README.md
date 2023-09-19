@@ -5,9 +5,9 @@
 * OS
   * Windows 10/11 WSL2 Ubuntu 22.04.1 LTS
 * Unity Hub
-  * Unity Hub 3.5.0
+  * Unity Hub 3.5.2
 * Unity
-  * Unity 2021.3.7f1
+  * Unity 2022.3.8f1
 
 なお、Unityおよび Unity Hub はインストールされていることを前提として解説します。
 
