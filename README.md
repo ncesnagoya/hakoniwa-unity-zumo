@@ -46,22 +46,21 @@ https://github.com/ncesnagoya/hakoniwa-unity-zumo/releases
 |左端| 3.49(0.1375)  | 0.035   |-0.330|
 |sum|66(2.6)|0.66||
 
-
-
-
-
-
-
-
 ![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/c90a84df-eaf8-46b5-967e-d1114c60a127)
 
 参考：https://www.pololu.com/docs/0J57/2.c
 
 
+### ジャイロセンサー/加速度センサー/磁気センサーについて
 
+Unityは左手系ですが、PDU通信データは右手系で計算した値を設定しています。
 
-
-
+|指|座標|左手系（Unity）|←|右手系（ROS）|←|	
+| ------- | ------- | ------- | ------- |  ------- |  ------- | 
+|指|座標|自分中心|ロボット|自分中心|ロボット|
+|親指|X|後|右|右|前方|
+|人差し指|Y|上|上|前|左|
+|中指|Z|右|前方|上|上|
 
 
 
