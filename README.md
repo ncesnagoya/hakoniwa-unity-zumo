@@ -46,18 +46,18 @@ cd hakoniwa-unity-zumo/
 
 ![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/20658510-6990-4630-80c7-42620f6dfb55)
 
+また、以下のダイアログが出ますが、`Ignore` してください。
+
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/1ac1a546-adb3-4a97-936a-9c9f11959dd7)
 
 成功するとこうなります。
 
-TODO
+![image](https://github.com/ncesnagoya/hakoniwa-unity-zumo/assets/164193/757d54c2-45b0-4f19-9e06-3c82e5514795)
 
-なお、Unityエディタのバージョンによっては、起動中にエラーとなる場合があります。
-その場合、途中、ダイアログがポップアップされて警告されますが、気にせず起動しましょう。
 
-原因は、`Newtonsoft.Json` が不足しているためです。
-対応方法は、下記記事にある通り、Unityのパッケージマネージャから `Newtonsoft.Json`をインストールすることで解消できます。
+次に、`Newtonsoft.Json` が不足しているために発生しているエラーを解消します。
 
-https://qiita.com/sakano/items/6fa16af5ceab2617fc0f
+PackageManager左上の+ボタンから、「Add package from git URL...」で `com.unity.nuget.newtonsoft-json` を追加します。
 
 ## Unity単独で開発する場合
 
