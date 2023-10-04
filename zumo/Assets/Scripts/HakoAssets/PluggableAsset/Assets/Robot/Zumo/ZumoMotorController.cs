@@ -25,6 +25,7 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
         private IRobotPartsMotor[] front_motors = new IRobotPartsMotor[(int)ZumoMotorType.MotorType_Num];
         private IRobotPartsMotor[] back_motors = new IRobotPartsMotor[(int)ZumoMotorType.MotorType_Num];
 
+        public int motor_force = 20;
         public void Initialize(object obj)
         {
             GameObject tmp = null;
@@ -57,7 +58,10 @@ namespace Hakoniwa.PluggableAsset.Assets.Robot.Zumo
                 this.front_motors[(int)ZumoMotorType.MotorType_Right] = this.transform.Find("Front").Find("Right").GetComponentInChildren<IRobotPartsMotor>();
                 this.back_motors[(int)ZumoMotorType.MotorType_Left] = this.transform.Find("Back").Find("Left").GetComponentInChildren<IRobotPartsMotor>();
                 this.back_motors[(int)ZumoMotorType.MotorType_Right] = this.transform.Find("Back").Find("Right").GetComponentInChildren<IRobotPartsMotor>();
-
+                this.front_motors[(int)ZumoMotorType.MotorType_Left].SetForce(motor_force);
+                this.front_motors[(int)ZumoMotorType.MotorType_Right].SetForce(motor_force);
+                this.back_motors[(int)ZumoMotorType.MotorType_Left].SetForce(motor_force);
+                this.back_motors[(int)ZumoMotorType.MotorType_Right].SetForce(motor_force);
             }
             for (int i = 0; i < this.front_motors.Length; i++)
             {
