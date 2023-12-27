@@ -130,6 +130,12 @@ cd hakoniwa-unity-zumo/
  bash install.bash 
 ```
 
+unzipがないというエラーが出た場合は場合はインストールをしてください
+
+```
+sudo apt-get install -y unzip 
+```
+
 この状態で Unity Hub で当該プロジェクトを開きましょう。
 
 対象フォルダ：`hakoniwa-unity-zumo\plugin\plugin-srcs`
