@@ -6,7 +6,7 @@ then
     if [ ! -d plugin/plugin-srcs/Assets/Model/Zumo -a ! -d zumo/Assets/Model/Zumo ]
     then
         echo "ERROR can not found Zumo.zip"
-        echo "please download here: https://github.com/ncesnagoya/hakoniwa-unity-zumo/releases/tag/v1.1.0"
+        echo "please download here: https://github.com/ncesnagoya/hakoniwa-unity-zumo/releases/tag/v1.2.0"
         echo "and unzip Zumo.zip on the zumo/Assets/Model, "
         echo "after that, please remove Zumo.zip"
         exit 1

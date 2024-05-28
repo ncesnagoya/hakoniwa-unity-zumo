@@ -115,6 +115,10 @@ git clone --recursive git@github.com:ncesnagoya/hakoniwa-zumosim.git
 git clone --recursive git@github.com:ncesnagoya/hakoniwa-unity-zumo.git
 ```
 
+`Zumo.zip` をダウンロードし解凍して、`Zumo`フォルダ以下を `plugin/plugin-srcs/Assets/Model` にコピーします。
+
+https://github.com/ncesnagoya/hakoniwa-unity-zumo/releases/download/v1.2.0/Zumo.zip
+
 ## インストール手順
 
 
