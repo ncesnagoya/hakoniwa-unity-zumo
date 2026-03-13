@@ -70,3 +70,6 @@ zumo/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 # Temporary auto-generated Android Assets
 zumo/[Aa]ssets/[Ss]treamingAssets/aa.meta
 zumo/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# External import files
+zumo/Assets/Model/Zumo/
